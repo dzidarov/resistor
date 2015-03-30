@@ -1,0 +1,136 @@
+Purvo-Menu = menu('izberete cvqt','Black','Brown','Red','Orange','Yellow','Green','Blue','Purple','Grey','White')
+
+Vtoro-Menu = menu('izberete cvqt','Black','Brown','Red','Orange','Yellow','Green','Blue','Purple','Grey','White')
+
+Treto-Menu = menu('izberete cvqt','Black','Brown','Red','Orange','Yellow','Green','Blue','Purple','Grey','White')
+
+Multiplier = menu('izberete cvqt','Silver','Gold','Black','Brown','Red','Orange','Yellow','Green','Blue','Purple')
+
+Tolerance = menu('izberete cvqt','Silver','Gold','Brown','Red','Green','Blue','Purple')
+
+\\ suzdavat se otdelnite menuta koito shte se izpolzvat
+
+switch Purvo-Menu
+case 1
+rezultat1 = 0
+case 2
+rezultat1 = 100
+case 3
+rezultat1 = 200
+case 4
+rezultat1 = 300
+case 5
+rezultat1 = 400
+case 6
+rezultat1 = 500
+case 7
+rezultat1 = 600
+case 8
+rezultat1 = 700
+case 9
+rezultat1 = 800
+case 10
+rezultat1 = 900
+  end
+
+switch Vtoro-Menu
+case 1
+rezultat2 = 0
+case 2
+rezultat2 = 10
+case 3
+rezultat2 = 20
+case 4
+rezultat2 = 30
+case 5
+rezultat2 = 40
+case 6
+rezultat2 = 50
+case 7
+rezultat2 = 60
+case 8
+rezultat2 = 70
+case 9
+rezultat2 = 80
+case 10
+rezultat2 = 90
+  end
+
+switch Treto-Menu
+case 1
+rezultat3 = 0
+case 2
+rezultat3 = 1
+case 3
+rezultat3 = 2
+case 4
+rezultat3 = 3
+case 5
+rezultat3 = 4
+case 6
+rezultat3 = 5
+case 7
+rezultat3 = 6
+case 8
+rezultat3 = 7
+case 9
+rezultat3 = 8
+case 10
+rezultat3 = 9
+end
+
+switch mnojitel
+case 1
+mnojitel = 0.01
+merna-edinica = 'ohms'
+case 2
+mnojitel = 0.1
+merna-edinica = 'ohms'
+case 3
+mnojitel = 1
+merna-edinica = 'ohms'
+case 4
+mnojitel = 10
+merna-edinica = 'ohms'
+case 5
+mnojitel = 100
+merna-edinica = 'ohms'
+case 6
+mnojitel = 1
+merna-edinica ='K-ohms'
+case 7
+mnojitel = 10
+merna-edinica='K-ohms'
+case 8
+mnojitel = 100
+merna-edinica = 'K-ohms'
+case 9
+mnojitel = 1
+merna edinica = 'M-ohms'
+case 10
+mnojitel = 10
+merna-edinica = 'M-ohms'
+  end
+
+switch Tolerance
+case 1
+tolerance = '10%'
+case 2
+tolerance = '5%'
+case 3
+tolerance = '1%'
+case 4
+tolerance = '2%'
+case 5
+tolerance = '0.5%'
+case 6
+tolerance = '0.25%'
+case 7
+tolerance = '0.1%'
+  end
+\\ zadavat se razlichnite promenlivi i tehnite stoinosti pri izbirane na buton ot menuto
+
+res = (rezultat1 + rezultat2 +rezultat3) * mnojitel 
+disp(merna-edinica) 
+disp(tolerance) 
+\\ izvejda se rezultatut, mernata edinica i tolerancut na rezistora
